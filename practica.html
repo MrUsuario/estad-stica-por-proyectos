@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Practica | ¡Nos convertimos en investigadores estadísticos! </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Manuel Ramírez Triviño" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">¡Nos convertimos en investigadores estadísticos!</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¡Nos convertimos en investigadores estadísticos!</a></li>
+   <li><a href="el_problema.html" class="no-ch">El problema</a></li>
+   <li><a href="manos_a_la_obra.html" class="no-ch">Manos a la obra</a></li>
+   <li><a href="creamos_las_tablas_de_frecuencias.html" class="no-ch">Creamos las tablas de frecuencias</a></li>
+   <li class="current-page-parent"><a href="analizamos_los_datos.html" class="current-page-parent daddy">Analizamos los datos</a>
+   <ul>
+      <li id="active"><a href="practica.html" class="active no-ch">Practica</a></li>
+   </ul>
+   </li>
+   <li><a href="resumiendo_y_facilitando_la_informacin_de_datos.html" class="daddy">Resumiendo y facilitando la información de datos</a>
+   <ul class="other-section">
+      <li><a href="diagrama_de_barras.html" class="no-ch">Diagrama de barras</a></li>
+      <li><a href="diagrama_de_sectores.html" class="no-ch">Diagrama de sectores</a></li>
+      <li><a href="a_graficar.html" class="no-ch">¡A graficar!</a></li>
+   </ul>
+   </li>
+   <li><a href="extrayendo_conclusiones.html" class="no-ch">Extrayendo conclusiones</a></li>
+   <li><a href="presentacin_de_resultados.html" class="no-ch">Presentación de resultados</a></li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="analizamos_los_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="resumiendo_y_facilitando_la_informacin_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Practica</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id36">
+<div class="iDevice emphasis0" >
+<div id="ta36_430_2" class="block iDevice_content">
+<div class="exe-text"><style>
+        /* Estilos Generales y DUA */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f2f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #cce7ed;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            border-bottom: 2px solid #e0f2f7;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #007bff;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Sección de Datos */
+        .datos-generados {
+            background-color: #f0f8ff;
+            border: 2px dashed #007bff;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #004085;
+            letter-spacing: 1px;
+        }
+
+        /* Botones */
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button#btnGenerar {
+            background-color: #28a745;
+            color: white;
+        }
+        button#btnGenerar:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+        button#btnCorregir {
+            background-color: #007bff;
+            color: white;
+            margin-bottom: 20px;
+        }
+        button#btnCorregir:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        button#btnMostrarProcedimiento {
+            background-color: #6c757d;
+            color: white;
+        }
+        button#btnMostrarProcedimiento:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        /* Entradas de Texto */
+        .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .input-group label {
+            flex: 1;
+            font-weight: bold;
+            color: #555;
+            font-size: 1.1em;
+            text-align: right;
+        }
+        .input-group input[type="number"] {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 1.1em;
+            width: calc(100% - 150px);
+            box-sizing: border-box;
+        }
+        .input-group input[type="number"]:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+
+        /* Resultados de Corrección */
+        .resultado {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .resultado.correcto {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .resultado.incorrecto {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .resultado strong {
+            margin-right: 8px;
+        }
+        .icono {
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        /* Visibilidad de los elementos de entrada */
+        #inputsCalculo {
+            display: none;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px dashed #ced4da;
+        }
+
+        /* Mensajes de feedback */
+        #mensajeFeedback {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        #mensajeFeedback.success {
+            color: #28a745;
+        }
+        #mensajeFeedback.error {
+            color: #dc3545;
+        }
+
+        /* Procedimiento de cálculo */
+        .procedimiento {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .procedimiento h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .paso-calculo {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .formula {
+            font-family: 'Courier New', monospace;
+            background-color: #e9ecef;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 8px 0;
+            display: inline-block;
+        }
+        .datos-ordenados {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0;
+        }
+        .numero {
+            padding: 8px 12px;
+            background-color: #e7f3ff;
+            border-radius: 4px;
+            font-weight: bold;
+            min-width: 40px;
+            text-align: center;
+        }
+        .numero.mediana {
+            background-color: #ffecb3;
+            border: 2px solid #ffc107;
+        }
+        .conteo-frecuencias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .frecuencia {
+            padding: 6px 10px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .frecuencia.moda {
+            background-color: #c8e6c9;
+            border: 2px solid #4caf50;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .datos-generados {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+            button {
+                padding: 12px 15px;
+                font-size: 1em;
+            }
+            .input-group {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .input-group label {
+                text-align: left;
+                width: 100%;
+            }
+            .input-group input[type="number"] {
+                width: 100%;
+            }
+        }
+    </style>
+<div class="container">
+<h1>🔢 Ejercicio interactivo de Estadística</h1>
+<p>Este es tu espacio para practicar. ¡Comencemos!</p>
+<p>Tu tarea es calcular la <strong>media, mediana y moda</strong>. Introduce tus respuestas en las casillas correspondientes y luego haz clic en "Corregir" para ver si tus cálculos son correctos.</p>
+<button id="btnGenerar" onclick="generarConjuntoYMostrar()">Generar Nuevos Números</button>
+<div id="datosGenerados" class="datos-generados">Haz clic en "Generar Nuevos Números" para empezar.</div>
+<div id="inputsCalculo">
+<h2>Ingresa tus Cálculos:</h2>
+<div class="input-group"><label for="inputMedia">Media:</label> <input type="number" id="inputMedia" placeholder="Ej: 45.75" step="0.01" /></div>
+<div class="input-group"><label for="inputMediana">Mediana:</label> <input type="number" id="inputMediana" placeholder="Ej: 52" /></div>
+<div class="input-group"><label for="inputModa">Moda:</label> <input type="text" id="inputModa" placeholder="Ej: 20 (o 20, 30 si hay varias)" />
+<p style="font-size: 0.9em; margin-top: -10px; color: #666; width: 100%; text-align: right;">*Si hay varias modas, sepáralas con comas (Ej: 20, 35).</p>
+</div>
+<button id="btnCorregir" onclick="corregirRespuestas()">Corregir mis Respuestas</button> <button id="btnMostrarProcedimiento" onclick="mostrarProcedimiento()">Mostrar Procedimiento de Cálculo</button></div>
+<div id="resultadosCorreccion"></div>
+<div id="mensajeFeedback"></div>
+<div id="procedimientoCalculo" class="procedimiento"></div>
+</div>
+<p>
+<script>
+        let conjuntoActual = [];
+        let mediaCorrecta, medianaCorrecta, modaCorrecta;
+        let datosOrdenados = [];
+
+        // --- FUNCIONES AUXILIARES ---
+        function generarEnteroAleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Función para mezclar un array (algoritmo Fisher-Yates)
+        function mezclarArray(array) {
+            const nuevoArray = [...array];
+            for (let i = nuevoArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [nuevoArray[i], nuevoArray[j]] = [nuevoArray[j], nuevoArray[i]];
+            }
+            return nuevoArray;
+        }
+
+        // --- FUNCIONES ESTADÍSTICAS ---
+        function calcularMedia(datos) {
+            if (datos.length === 0) return 0;
+            const suma = datos.reduce((acumulador, actual) => acumulador + actual, 0);
+            return (suma / datos.length);
+        }
+
+        function calcularMediana(datos) {
+            if (datos.length === 0) return 0;
+            datosOrdenados = [...datos].sort((a, b) => a - b);
+            const n = datosOrdenados.length;
+            
+            if (n % 2 === 1) {
+                const indiceCentral = Math.floor(n / 2);
+                return datosOrdenados[indiceCentral];
+            } else {
+                const indice1 = n / 2 - 1;
+                const indice2 = n / 2;
+                return (datosOrdenados[indice1] + datosOrdenados[indice2]) / 2;
+            }
+        }
+
+        function calcularModa(datos) {
+            if (datos.length === 0) return "No hay datos";
+            const conteo = {};
+            datos.forEach(numero => {
+                conteo[numero] = (conteo[numero] || 0) + 1;
+            });
+
+            let moda = [];
+            let maxFrecuencia = 0;
+
+            for (const numeroStr in conteo) {
+                const numero = Number(numeroStr);
+                const frecuencia = conteo[numeroStr];
+                if (frecuencia > maxFrecuencia) {
+                    maxFrecuencia = frecuencia;
+                    moda = [numero];
+                } else if (frecuencia === maxFrecuencia) {
+                    moda.push(numero);
+                }
+            }
+            
+            if (maxFrecuencia <= 1 && datos.length > 0) {
+                 return "No hay moda única"; 
+            }
+            
+            return moda.sort((a, b) => a - b); 
+        }
+
+        // --- FUNCIONES DE INTERFAZ Y LÓGICA PRINCIPAL ---
+
+        function generarConjuntoYMostrar() {
+            const n = generarEnteroAleatorio(5, 6); 
+            conjuntoActual = [];
+            for (let i = 0; i < n; i++) {
+                conjuntoActual.push(generarEnteroAleatorio(1, 99));
+            }
+            
+            // ELIMINADO: conjuntoActual.sort((a, b) => a - b);
+            // EN SU LUGAR: Mezclamos el array para mostrar los números en orden aleatorio
+            const conjuntoMezclado = mezclarArray(conjuntoActual);
+
+            document.getElementById('datosGenerados').innerHTML = `
+                <strong>Conjunto de Números:</strong> ${conjuntoMezclado.join(', ')}
+            `;
+
+            mediaCorrecta = calcularMedia(conjuntoActual);
+            medianaCorrecta = calcularMediana(conjuntoActual);
+            modaCorrecta = calcularModa(conjuntoActual);
+
+            document.getElementById('inputsCalculo').style.display = 'block';
+            document.getElementById('resultadosCorreccion').innerHTML = '';
+            document.getElementById('mensajeFeedback').innerHTML = '';
+            document.getElementById('procedimientoCalculo').style.display = 'none';
+            document.getElementById('procedimientoCalculo').innerHTML = '';
+
+            document.getElementById('inputMedia').value = '';
+            document.getElementById('inputMediana').value = '';
+            document.getElementById('inputModa').value = '';
+        }
+
+        function corregirRespuestas() {
+            const inputMedia = parseFloat(document.getElementById('inputMedia').value);
+            const inputMediana = parseFloat(document.getElementById('inputMediana').value);
+            const inputModaRaw = document.getElementById('inputModa').value.trim();
+
+            let resultadosHTML = '<h2>Resultados de la Corrección:</h2>';
+            let todasCorrectas = true;
+
+            // Corrección de la Media
+            const esMediaCorrecta = Math.abs(inputMedia - mediaCorrecta) < 0.01; 
+            resultadosHTML += `
+                <div class="resultado ${esMediaCorrecta ? 'correcto' : 'incorrecto'}">
+                    <span class="icono">${esMediaCorrecta ? '✅' : '❌'}</span>
+                    <strong>Media:</strong> Tu respuesta: ${isNaN(inputMedia) ? 'No ingresada' : inputMedia.toFixed(2)}. Correcta: ${mediaCorrecta.toFixed(2)}.
+                </div>
+            `;
+            if (!esMediaCorrecta) {
+                todasCorrectas = false;
+                resultadosHTML += `<div class="paso-calculo">
+                    <p><strong>Explicación:</strong> La media se calcula sumando todos los valores y dividiendo entre el número de datos.</p>
+                    <p>Suma: ${conjuntoActual.join(' + ')} = ${conjuntoActual.reduce((a, b) => a + b, 0)}</p>
+                    <p>Número de datos: ${conjuntoActual.length}</p>
+                    <p>Media: ${conjuntoActual.reduce((a, b) => a + b, 0)} ÷ ${conjuntoActual.length} = ${mediaCorrecta.toFixed(2)}</p>
+                </div>`;
+            }
+
+            // Corrección de la Mediana
+            const esMedianaCorrecta = inputMediana === medianaCorrecta;
+            resultadosHTML += `
+                <div class="resultado ${esMedianaCorrecta ? 'correcto' : 'incorrecto'}">
+                    <span class="icono">${esMedianaCorrecta ? '✅' : '❌'}</span>
+                    <strong>Mediana:</strong> Tu respuesta: ${isNaN(inputMediana) ? 'No ingresada' : inputMediana}. Correcta: ${medianaCorrecta}.
+                </div>
+            `;
+            if (!esMedianaCorrecta) {
+                todasCorrectas = false;
+                let explicacion = '';
+                if (conjuntoActual.length % 2 === 1) {
+                    const indiceCentral = Math.floor(conjuntoActual.length / 2);
+                    explicacion = `<p>Como hay un número impar de datos (${conjuntoActual.length}), la mediana es el valor central.</p>
+                    <p>Datos ordenados: <span class="datos-ordenados">${datosOrdenados.map((num, idx) => 
+                        `<span class="numero ${idx === indiceCentral ? 'mediana' : ''}">${num}</span>`
+                    ).join('')}</span></p>
+                    <p>La mediana es el valor en la posición ${indiceCentral + 1}: ${medianaCorrecta}</p>`;
+                } else {
+                    const indice1 = conjuntoActual.length / 2 - 1;
+                    const indice2 = conjuntoActual.length / 2;
+                    explicacion = `<p>Como hay un número par de datos (${conjuntoActual.length}), la mediana es el promedio de los dos valores centrales.</p>
+                    <p>Datos ordenados: <span class="datos-ordenados">${datosOrdenados.map((num, idx) => 
+                        `<span class="numero ${idx === indice1 || idx === indice2 ? 'mediana' : ''}">${num}</span>`
+                    ).join('')}</span></p>
+                    <p>Los dos valores centrales son ${datosOrdenados[indice1]} y ${datosOrdenados[indice2]}</p>
+                    <p>Mediana: (${datosOrdenados[indice1]} + ${datosOrdenados[indice2]}) ÷ 2 = ${medianaCorrecta}</p>`;
+                }
+                resultadosHTML += `<div class="paso-calculo">${explicacion}</div>`;
+            }
+
+            // Corrección de la Moda
+            let esModaCorrecta = false;
+            let modaUsuario;
+
+            if (inputModaRaw === "No hay moda" || inputModaRaw === "No hay moda única") {
+                esModaCorrecta = (modaCorrecta === "No hay moda única");
+            } else if (typeof modaCorrecta === 'string' && modaCorrecta.includes("No hay moda")) {
+                 esModaCorrecta = false;
+            } else {
+                modaUsuario = inputModaRaw.split(',').map(s => parseFloat(s.trim())).filter(n => !isNaN(n)).sort((a,b) => a-b);
+                esModaCorrecta = JSON.stringify(modaUsuario) === JSON.stringify(modaCorrecta);
+            }
+            
+            const modaUsuarioDisplay = inputModaRaw === "" ? 'No ingresada' : inputModaRaw;
+            const modaCorrectaDisplay = (typeof modaCorrecta === 'string') ? modaCorrecta : modaCorrecta.join(', ');
+
+            resultadosHTML += `
+                <div class="resultado ${esModaCorrecta ? 'correcto' : 'incorrecto'}">
+                    <span class="icono">${esModaCorrecta ? '✅' : '❌'}</span>
+                    <strong>Moda:</strong> Tu respuesta: ${modaUsuarioDisplay}. Correcta: ${modaCorrectaDisplay}.
+                </div>
+            `;
+            if (!esModaCorrecta) {
+                todasCorrectas = false;
+                let explicacion = '';
+                
+                if (modaCorrecta === "No hay moda única") {
+                    explicacion = `<p>La moda es el valor que aparece con mayor frecuencia. En este caso, todos los valores aparecen una sola vez o no hay un valor que se repita más que otros.</p>
+                    <p>Por lo tanto, no hay una moda única.</p>`;
+                } else {
+                    const conteo = {};
+                    conjuntoActual.forEach(numero => {
+                        conteo[numero] = (conteo[numero] || 0) + 1;
+                    });
+                    
+                    let maxFrecuencia = 0;
+                    for (const num in conteo) {
+                        if (conteo[num] > maxFrecuencia) maxFrecuencia = conteo[num];
+                    }
+                    
+                    explicacion = `<p>La moda es el valor que aparece con mayor frecuencia.</p>
+                    <p>Frecuencias:</p>
+                    <div class="conteo-frecuencias">`;
+                    
+                    for (const num in conteo) {
+                        const esModa = conteo[num] === maxFrecuencia;
+                        explicacion += `<div class="frecuencia ${esModa ? 'moda' : ''}">${num}: ${conteo[num]} vez${conteo[num] > 1 ? 'es' : ''}</div>`;
+                    }
+                    
+                    explicacion += `</div><p>El${modaCorrecta.length > 1 ? 's valor' : ' valor'} que aparece con mayor frecuencia (${maxFrecuencia} vez${maxFrecuencia > 1 ? 'es' : ''}) es${modaCorrecta.length > 1 ? 'n' : ''}: ${modaCorrectaDisplay}</p>`;
+                }
+                
+                resultadosHTML += `<div class="paso-calculo">${explicacion}</div>`;
+            }
+
+            document.getElementById('resultadosCorreccion').innerHTML = resultadosHTML;
+
+            // Mensaje de feedback general
+            const mensajeFeedback = document.getElementById('mensajeFeedback');
+            if (todasCorrectas) {
+                mensajeFeedback.className = 'success';
+                mensajeFeedback.innerHTML = '🎉 ¡Felicidades! Todas tus respuestas son correctas. ¡Excelente trabajo!';
+            } else {
+                mensajeFeedback.className = 'error';
+                mensajeFeedback.innerHTML = '¡Sigue intentándolo! Revisa las explicaciones y vuelve a intentarlo.';
+            }
+        }
+
+        function mostrarProcedimiento() {
+            const procedimientoDiv = document.getElementById('procedimientoCalculo');
+            procedimientoDiv.style.display = 'block';
+            
+            let contenido = '<h2>Procedimiento de Cálculo</h2>';
+            
+            // Procedimiento para la Media
+            contenido += `
+                <div class="paso-calculo">
+                    <h3>Media (Promedio)</h3>
+                    <p>La media se calcula sumando todos los valores y dividiendo entre el número de datos.</p>
+                    <p>Datos originales: ${conjuntoActual.join(', ')}</p>
+                    <p>Suma: ${conjuntoActual.join(' + ')} = ${conjuntoActual.reduce((a, b) => a + b, 0)}</p>
+                    <p>Número de datos: ${conjuntoActual.length}</p>
+                    <p class="formula">Media = Suma ÷ Número de datos = ${conjuntoActual.reduce((a, b) => a + b, 0)} ÷ ${conjuntoActual.length} = ${mediaCorrecta.toFixed(2)}</p>
+                </div>
+            `;
+            
+            // Procedimiento para la Mediana
+            let medianaProcedimiento = '';
+            if (conjuntoActual.length % 2 === 1) {
+                const indiceCentral = Math.floor(conjuntoActual.length / 2);
+                medianaProcedimiento = `
+                    <p>Como hay un número impar de datos (${conjuntoActual.length}), la mediana es el valor central.</p>
+                    <p>Datos ordenados: <span class="datos-ordenados">${datosOrdenados.map((num, idx) => 
+                        `<span class="numero ${idx === indiceCentral ? 'mediana' : ''}">${num}</span>`
+                    ).join('')}</span></p>
+                    <p class="formula">Mediana = Valor en la posición ${indiceCentral + 1} = ${medianaCorrecta}</p>
+                `;
+            } else {
+                const indice1 = conjuntoActual.length / 2 - 1;
+                const indice2 = conjuntoActual.length / 2;
+                medianaProcedimiento = `
+                    <p>Como hay un número par de datos (${conjuntoActual.length}), la mediana es el promedio de los dos valores centrales.</p>
+                    <p>Datos ordenados: <span class="datos-ordenados">${datosOrdenados.map((num, idx) => 
+                        `<span class="numero ${idx === indice1 || idx === indice2 ? 'mediana' : ''}">${num}</span>`
+                    ).join('')}</span></p>
+                    <p>Los dos valores centrales son ${datosOrdenados[indice1]} y ${datosOrdenados[indice2]}</p>
+                    <p class="formula">Mediana = (${datosOrdenados[indice1]} + ${datosOrdenados[indice2]}) ÷ 2 = ${medianaCorrecta}</p>
+                `;
+            }
+            
+            contenido += `
+                <div class="paso-calculo">
+                    <h3>Mediana</h3>
+                    ${medianaProcedimiento}
+                </div>
+            `;
+            
+            // Procedimiento para la Moda
+            let modaProcedimiento = '';
+            if (modaCorrecta === "No hay moda única") {
+                modaProcedimiento = `
+                    <p>La moda es el valor que aparece con mayor frecuencia.</p>
+                    <p>En este caso, todos los valores aparecen una sola vez o no hay un valor que se repita más que otros.</p>
+                    <p>Por lo tanto, no hay una moda única.</p>
+                `;
+            } else {
+                const conteo = {};
+                conjuntoActual.forEach(numero => {
+                    conteo[numero] = (conteo[numero] || 0) + 1;
+                });
+                
+                let maxFrecuencia = 0;
+                for (const num in conteo) {
+                    if (conteo[num] > maxFrecuencia) maxFrecuencia = conteo[num];
+                }
+                
+                modaProcedimiento = `
+                    <p>La moda es el valor que aparece con mayor frecuencia.</p>
+                    <p>Frecuencias:</p>
+                    <div class="conteo-frecuencias">`;
+                
+                for (const num in conteo) {
+                    const esModa = conteo[num] === maxFrecuencia;
+                    modaProcedimiento += `<div class="frecuencia ${esModa ? 'moda' : ''}">${num}: ${conteo[num]} vez${conteo[num] > 1 ? 'es' : ''}</div>`;
+                }
+                
+                modaProcedimiento += `</div><p class="formula">Moda = Valor${modaCorrecta.length > 1 ? 'es' : ''} con mayor frecuencia (${maxFrecuencia} vez${maxFrecuencia > 1 ? 'es' : ''}) = ${(typeof modaCorrecta === 'string') ? modaCorrecta : modaCorrecta.join(', ')}</p>`;
+            }
+            
+            contenido += `
+                <div class="paso-calculo">
+                    <h3>Moda</h3>
+                    ${modaProcedimiento}
+                </div>
+            `;
+            
+            procedimientoDiv.innerHTML = contenido;
+        }
+    </script>
+</p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="analizamos_los_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="resumiendo_y_facilitando_la_informacin_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_escolares_js.js"></script></body></html>
